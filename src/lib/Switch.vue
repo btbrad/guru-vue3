@@ -25,6 +25,8 @@ import { defineComponent, ref } from 'vue'
 </template>
 
 <style lang="scss" scoped>
+  @import '@/styles/variables.scss';
+
   $h: 22px;
   $h2: $h - 4px;
   button {
@@ -46,7 +48,7 @@ import { defineComponent, ref } from 'vue'
     transition: left .25s;
   }
   button.open {
-    background: #0f0;
+    background: $theme-primary;
   }
   button.open > span {
     left: calc(#{$h} * 2 - #{$h2} - 2px);

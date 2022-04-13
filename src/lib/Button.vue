@@ -35,6 +35,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import '@/styles/variables.scss';
+
 .guru-button {
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -42,7 +44,7 @@ export default defineComponent({
   font-size: 16px;
   cursor: pointer;
   &:hover {
-    background: #0f0;
+    background: $theme-primary;
     color: #fff;
     border-color: #fff;
   }
@@ -54,7 +56,7 @@ export default defineComponent({
     border: none;
     background: none;
     &:hover {
-      color: #0f0;
+      color: $theme-primary;
     }
   }
 }
