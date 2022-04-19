@@ -25,8 +25,6 @@ import { defineComponent, ref } from 'vue'
 </template>
 
 <style lang="scss" scoped>
-  @import '@/styles/variables.scss';
-
   $h: 22px;
   $h2: $h - 4px;
   button {

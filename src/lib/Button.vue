@@ -35,8 +35,6 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import '@/styles/variables.scss';
-
 .guru-button {
   border: 1px solid #ccc;
   border-radius: 5px;
