@@ -42,7 +42,7 @@ export default defineComponent({
   font-size: 16px;
   cursor: pointer;
   &:hover {
-    background: $theme-primary;
+    background: $primary;
     color: #fff;
     border-color: #fff;
   }
@@ -54,7 +54,7 @@ export default defineComponent({
     border: none;
     background: none;
     &:hover {
-      color: $theme-primary;
+      color: $primary;
     }
   }
 }
