@@ -2,12 +2,16 @@
   <div>
     默认：
     <guru-button @click="onClick">button</guru-button>
+    <guru-button disabled>button</guru-button>
     <br />
     尺寸size:
-    small: <guru-button @click="onClick" size="small">button</guru-button>
+    <guru-button @click="onClick" size="small" type="primary">small button</guru-button>
+    <guru-button @click="onClick" size="large">large button</guru-button>
     <br />
     类型type：
-    link: <guru-button @click="onClick" type="link">button</guru-button>
+    <guru-button @click="onClick" type="danger">danger</guru-button>
+    <guru-button @click="onClick" type="link">button</guru-button>
+    <guru-button @click="onClick" type="link" disabled>button</guru-button>
   </div>
 </template>
 

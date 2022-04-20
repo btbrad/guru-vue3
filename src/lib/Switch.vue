@@ -1,21 +1,21 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
 
- export default defineComponent({
-   name: 'Switch',
-   props: {
-     value: Boolean
-   },
-   setup (props, context) {
-     const toggleStatus = () => {
-       context.emit('update:value', !props.value)             
-     }
+export default defineComponent({
+  name: 'Switch',
+  props: {
+    value: Boolean
+  },
+  setup (props, context) {
+    const toggleStatus = () => {
+      context.emit('update:value', !props.value)             
+    }
 
-     return {
-       toggleStatus
-     }
-   }
- })
+    return {
+      toggleStatus
+    }
+  }
+})
 </script>
 
 <template>
@@ -32,6 +32,7 @@ import { defineComponent, ref } from 'vue'
     border-radius: $switch-border-radius;
     position: relative;
     cursor: pointer;
+    transition: $btn-transition;
   }
   button > span {
     width: $switch-inner-width;
